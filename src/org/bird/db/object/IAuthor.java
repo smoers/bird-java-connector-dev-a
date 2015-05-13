@@ -16,7 +16,7 @@ public interface IAuthor {
 	/*
 	 * get ID
 	 */
-	public String getID();
+	public UUID getID();
 	
 	/*
 	 * set Nom de l'auteur
