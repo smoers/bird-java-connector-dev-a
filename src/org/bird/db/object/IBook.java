@@ -1,5 +1,7 @@
 package org.bird.db.object;
 
+import java.util.UUID;
+
 import org.joda.time.DateTime;
 
 public interface IBook {
@@ -8,12 +10,12 @@ public interface IBook {
 	 * Set ID
 	 * @param id type object
 	 */
-	public void setID(Object id);
+	public void setID(UUID id);
 	
 	/*
 	 * get ID
 	 */
-	public Object getID();
+	public UUID getID();
 	
 	public void setTitle(String title);
 	

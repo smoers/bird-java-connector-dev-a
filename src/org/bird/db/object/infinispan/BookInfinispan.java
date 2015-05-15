@@ -8,14 +8,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
-import org.hibernate.annotations.Type;
+import org.bird.db.object.IBook;
+import org.bird.db.object.ICycle;
+import org.bird.db.object.IPhotoOrCover;
 import org.hibernate.search.annotations.ContainedIn;
-import org.hibernate.search.annotations.DateBridge;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.FieldBridge;
 import org.hibernate.search.annotations.Index;
 import org.hibernate.search.annotations.Indexed;
-import org.hibernate.search.annotations.Resolution;
 import org.hibernate.search.annotations.Store;
 import org.joda.time.DateTime;
 

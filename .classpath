@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="lib/infinispan/infinispan-core-7.2.1.Final.jar"/>
 	<classpathentry kind="lib" path="lib/infinispan/hibernate-search-engine-5.2.0.Final.jar"/>
 	<classpathentry kind="lib" path="lib/infinispan/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="lib/infinispan/lucene-core-5.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

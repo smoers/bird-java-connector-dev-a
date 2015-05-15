@@ -11,12 +11,12 @@ public interface ICycle {
 	 * Set ID
 	 * @param id type object
 	 */
-	public void setID(Object id);
+	public void setID(UUID id);
 	
 	/*
 	 * get ID
 	 */
-	public Object getID();
+	public UUID getID();
 	
 	/*
 	 * set le titre du cycle
