@@ -17,19 +17,13 @@ public class JodaTimeSplitBridge implements FieldBridge {
 		int day = datetime.getDayOfMonth();
 		
 		// set year
-		Field field = new Field(name+".year", String.valueOf(year),luceneoptions.getStore(),luceneoptions.getIndex(),luceneoptions.getTermVector());
-		field.setBoost(luceneoptions.getBoost());
-		document.add(field);
+		luceneoptions.addFieldToDocument(name+".year",String.valueOf(year), document);
 		
 		// set month
-		field = new Field(name+".month", month < 10 ? "0" : "" + String.valueOf(month),luceneoptions.getStore(),luceneoptions.getIndex(),luceneoptions.getTermVector());
-		field.setBoost(luceneoptions.getBoost());
-		document.add(field);
+		luceneoptions.addFieldToDocument(name+".month", month < 10 ? "0" : "" + String.valueOf(month), document);
 
 		// set day
-		field = new Field(name+".day", month < 10 ? "0" : "" + String.valueOf(day),luceneoptions.getStore(),luceneoptions.getIndex(),luceneoptions.getTermVector());
-		field.setBoost(luceneoptions.getBoost());
-		document.add(field);
+		luceneoptions.addFieldToDocument(name+".day", day < 10 ? "0" : "" + String.valueOf(day), document);
 
 	}
 

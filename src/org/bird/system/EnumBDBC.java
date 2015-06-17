@@ -11,7 +11,8 @@ public enum EnumBDBC {
 	   MongoDB("org.bird.db.connectors.MongoConnector","org.bird.db.adapters.MongoAdapter","org.bird.db.sessions.MongoSession"),
 	   BerkeleyDB("org.bird.db.connectors.BerkeleyConnector","org.bird.db.adapters.BerkeleyAdapter","org.bird.db.sessions.BerkeleySession"), 
 	   SQLite("org.bird.db.connectors.SQLiteConnector","org.bird.db.adapters.SQLiteAdapter","org.bird.db.sessions.SQLiteSession"),
-	   MapDB("org.bird.db.connectors.MapDBConnector","org.bird.db.adapters.MapDBAdapter","org.bird.db.sessions.MapDBSession");
+	   MapDB("org.bird.db.connectors.MapDBConnector","org.bird.db.adapters.MapDBAdapter","org.bird.db.sessions.MapDBSession"),
+	   Infinispan("org.bird.db.connectors.InfinispanConnector","org.bird.db.adapters.InfinispanAdapter","org.bird.db.sessions.InfinispanSession");
 	   
 	   protected String bdbc;
 	   protected String badapter;

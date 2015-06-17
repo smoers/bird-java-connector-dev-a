@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.UUID;
 
 import org.bird.db.connectors.IConnector;
+import org.bird.db.exceptions.DbException;
 
 public interface ISession {
 	
@@ -26,6 +27,7 @@ public interface ISession {
 	/**
 	 * 
 	 *  @return La liste des Database bird disponible sur cette connexion
+	 * @throws DbException 
 	 */
-	public List getDatabaseList();
+	public List getDatabaseList() throws DbException;
 }
